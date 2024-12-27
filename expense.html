@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading">Expense Tracker</h1>
+        <center>
+        <form id="expense-form"> 
+            <label for="expense-name">Description for Expense:</label>
+            <input type="text" id="expense-name" name="expense-name" placeholder="Description" required><br><br>
+
+            <label for="expense-amount">Spending Amount (₹):</label>
+            <input type="number" id="expense-amount" name="expense-amount" placeholder="Rupees" required><br><br>
+
+            <label for="expense-date">Date of Expense:</label>
+            <input type="date" id="expense-date" name="expense-date" required><br><br>
+
+            <label for="expense-category">Select the Section:</label>
+            <select id="expense-category" name="expense-category" required>
+                <option value="" disabled selected>Select category</option>
+                <option value="Food">Food</option>
+                <option value="Transport">Transport</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Clothes">Clothes</option>
+                <option value="Others">Others</option>
+            </select><br><br>
+            <center><button type="submit" id="button-expense">Add Expense</button></center>
+               </form>
+    </div>
+</center>
+
+ <br><br>
+
+    
+        <div class="expense-table">
+            <table id="table_expense">
+    <thead >
+                    <tr>
+                        <th>DESCRIPTION</th>
+                        <th>AMOUNT</th>
+                        <th>DATE</th>
+                        <th>CATEGORY</th>
+                        <th>ACTIONS</th>
+                    </tr>
+                </thead>
+                <tbody id="expense-list"></tbody>
+            </table>
+        </div>
+   
+
+    <div class="total-amount">
+        <p>TOTAL EXPENSES: ₹<span id="total-amount">0.00</span></p>
+        
+ 
+ 
+
+    <div class="filter">
+        <label for="filter-category">Filter By Category:</label>
+        <select id="filter-category">
+            <option value="All">All</option>
+            <option value="Food">Food</option>
+            <option value="Transport">Transport</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Clothes">Clothes</option>
+            <option value="Others">Others</option>
+        </select>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2024 Expense Tracker. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://twitter.com" target="_blank" title="Twitter">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://facebook.com" target="_blank" title="Facebook">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com" target="_blank" title="Instagram">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram">
+            </a>
+            <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+    </div>
+</footer>
+
+    <script src="script2.js"></script>
+
+    
+</body>
+</html>
